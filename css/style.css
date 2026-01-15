@@ -1,0 +1,162 @@
+/* GLOBAL STYLING */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* HIGHLIGHT KEYWORDS */
+.highlight {
+    font-weight: bold;
+    color: #E60000;
+}
+
+/* HEADER */
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    height: 50px;
+}
+
+/* NAVIGATION */
+.nav-links {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+}
+
+.nav-links a, .cta-button {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #E60000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover, .cta-button:hover {
+    background-color: #cc0000;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+/* HERO */
+.hero {
+    position: relative;
+    text-align: center;
+}
+
+.hero-img {
+    width: 100%;
+    height: auto;
+}
+
+.hero-text {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    color: #fff;
+}
+
+/* SECTIONS */
+section {
+    padding: 60px 80px;
+    margin-bottom: 60px;
+}
+
+.tilmelding-img, .junior-img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+/* BURGER MENU (MOBILE) */
+.burger {
+    display: none;
+    font-size: 30px;
+    background: none;
+    border: none;
+}
+
+/* MEDIA QUERY */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+    .nav-links.show {
+        display: flex;
+    }
+    .burger {
+        display: block;
+    }
+    section {
+        padding: 30px 20px;
+    }
+}
+@media (max-width: 768px) {
+    main section {
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+}
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+}
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+.nav-links a, .cta-button {
+    display: block;
+    padding: 12px 20px;
+    margin: 5px 0;
+    background-color: #E60000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover, .cta-button:hover {
+    background-color: #cc0000;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.highlight {
+    font-weight: bold;
+    color: #E60000; /* samme røde som knapper */
+}
+@media (max-width: 768px) {
+    section {
+        margin-bottom: 30px;
+    }
+}
