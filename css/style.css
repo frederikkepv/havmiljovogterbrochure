@@ -160,3 +160,46 @@ img {
         margin-bottom: 30px;
     }
 }
+/* --------------------------
+   Knapper og links - animation
+---------------------------*/
+
+/* Ensartet styling for alle interaktive knapper */
+.button, .nav-button, .cta-button {
+    background-color: #e63946;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover-effekt */
+.button:hover, .nav-button:hover, .cta-button:hover {
+    background-color: #d62828;
+    transform: scale(1.05); /* let forstørrelse */
+}
+
+/* Active / klik-effekt */
+.button:active, .nav-button:active, .cta-button:active {
+    transform: scale(0.95);
+}
+
+/* Puls-animation til fremhævede CTA-knapper */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.08); }
+    100% { transform: scale(1); }
+}
+
+/* Bruges kun på udvalgte knapper, fx forsiden CTA */
+.pulse-button {
+    animation: pulse 2s infinite;
+}
+
+/* Klik-feedback (midlertidig farveændring) */
+.button.clicked, .nav-button.clicked, .cta-button.clicked {
+    background-color: #ff4747;
+}
